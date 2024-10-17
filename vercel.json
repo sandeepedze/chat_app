@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.js", 
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
+    ],
+    "env": {
+      "PORT": 2000, 
+      "DATABASE_LOCAL":"mongodb+srv://ysrinivas4901:76xgyGl93yqI05gy@cluster0.q3tgz.mongodb.net/",
+      "MEDIA_FILE_SIZE": 2097152,
+        "JWT_SECRET":"my-ultra-secure-and-ultra-long-secret",
+        "JWT_EXPIRES_IN":"90d",
+        "JWT_COOKIE_EXPIRES_IN":90,
+
+        "EMAIL_HOST":"smtp.mailtrap.io",
+        "EMAIL_PORT":2525
+    }
+  }
+  
